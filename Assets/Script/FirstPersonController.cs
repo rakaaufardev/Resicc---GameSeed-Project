@@ -43,6 +43,7 @@ public class FirstPersonController : MonoBehaviour
 
     private Camera playerCamera;
     private CharacterController characterController;
+    private Animator animator;
 
     private Vector3 moveDirection;
     private Vector2 currentInput;
@@ -53,6 +54,7 @@ public class FirstPersonController : MonoBehaviour
     {
         playerCamera = GetComponentInChildren<Camera>();
         characterController = GetComponent<CharacterController>();
+        animator = GetComponent<Animator>();
         defaultYpos = playerCamera.transform.localPosition.y;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -64,6 +66,7 @@ public class FirstPersonController : MonoBehaviour
         {
             HandleMovementInput();
             HandleMouseLook();
+            HandleAnimator();
 
             if (canJump)
                 HandleJump();
@@ -108,6 +111,14 @@ public class FirstPersonController : MonoBehaviour
                 defaultYpos + MathF.Sin(timer) * (IsSprinting ? sprintBobAmount : walkBobAmount),
                 playerCamera.transform.localPosition.z);
         }
+    }
+
+    private void HandleAnimator()
+    {
+        Vector3 velocity = characterController.velocity;
+        float speed = new Vector3(velocity.x, 0, velocity.z).magnitude;
+
+        animator.SetFloat("Speed", speed);
     }
 
     private void FinalMovements()

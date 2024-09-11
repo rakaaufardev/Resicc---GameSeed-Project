@@ -3,7 +3,17 @@ guid: f2f24ec5f7852a84d875aa5c7f2cd454
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lampu bulat
+    second: {fileID: 2100000, guid: d521b6bc2eae8e141b31308938712e09, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lampu tumblr
+    second: {fileID: 2100000, guid: c65cd958871fe4446937a312087f91da, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

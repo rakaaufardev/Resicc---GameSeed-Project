@@ -3,7 +3,17 @@ guid: 66c83eef8e033774781ef4128e1c042b
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 2.plint
+    second: {fileID: 2100000, guid: 9674f3af9984acf43a5fd7a92c13d2e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lampu meja
+    second: {fileID: 2100000, guid: 33d6305f64075a24ea60cbe3c2489fe5, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

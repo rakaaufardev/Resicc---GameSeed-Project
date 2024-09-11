@@ -5,20 +5,25 @@ ModelImporter:
   internalIDToNameTable: []
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor
+    second: {fileID: 2100000, guid: 69d1fbeef95f14342a15a73bc19dc4ec, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: herringbone_parquet_diff_4k
-    second: {fileID: 2800000, guid: 05d9aef4081b52b47943350a7e1eaedf, type: 3}
+    second: {fileID: 2800000, guid: 2bda8c321e0f55b4b82ad5946d35730e, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: herringbone_parquet_nor_gl_4k
-    second: {fileID: 2800000, guid: c03c042b3407b8a4f8601de36277c426, type: 3}
+    second: {fileID: 2800000, guid: 49979c4e402994f4baaf1bcb14dac832, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: herringbone_parquet_rough_4k
-    second: {fileID: 2800000, guid: bdf9b562fae803048950a6073545971f, type: 3}
+    second: {fileID: 2800000, guid: 90fe7960b880a3944a1051d8fb2eea46, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -58,8 +63,8 @@ ModelImporter:
     importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0

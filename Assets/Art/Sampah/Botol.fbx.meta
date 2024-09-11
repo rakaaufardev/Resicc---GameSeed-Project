@@ -3,7 +3,17 @@ guid: e456ba2e99e52a049baab5aff2f7c0ed
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 14. Bantal kecil
+    second: {fileID: 2100000, guid: 6f7e390281617874695bbee95ed82c5d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Atasan kardus
+    second: {fileID: 2100000, guid: 614fd230bb850904f9fc8804897a6438, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

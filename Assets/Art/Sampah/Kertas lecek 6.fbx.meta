@@ -3,7 +3,12 @@ guid: 33250199c0dbeee4cb885f91e2b3448c
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 6.Rak buku
+    second: {fileID: 2100000, guid: 1244efbd96656844cb074aed03849214, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
 
     [Header("Controls")]
     [SerializeField] private KeyCode interactKey = KeyCode.Mouse0;
+    [SerializeField] private KeyCode keepKey = KeyCode.E;
+    [SerializeField] private KeyCode throwKey = KeyCode.G;
 
     private CharacterController characterController;
     private bool isCharacterGrounded = false;
@@ -83,9 +85,21 @@ public class PlayerController : MonoBehaviour
 
     private void HandleInteractionInput()
     {
-        if(Input.GetKeyDown(interactKey) && currentInteractable != null && Physics.Raycast(playerCamera.ViewportPointToRay(interactionRayPoint), out RaycastHit hit, interactionDistance, interactionLayer))
+        if (currentInteractable == null) return;
+
+        if (Input.GetKeyDown(interactKey) && Physics.Raycast(playerCamera.ViewportPointToRay(interactionRayPoint), out RaycastHit hit, interactionDistance, interactionLayer))
         {
             currentInteractable.OnInteract();
+        }
+
+        if (Input.GetKeyDown(keepKey))
+        {
+            currentInteractable.OnKeep();
+        }
+
+        if (Input.GetKeyDown(throwKey))
+        {
+            currentInteractable.OnThrow();
         }
     }
 

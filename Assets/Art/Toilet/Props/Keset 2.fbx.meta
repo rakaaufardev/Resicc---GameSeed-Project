@@ -1,19 +1,9 @@
 fileFormatVersion: 2
-guid: e46732fc7619ae54e810db009f4fb471
+guid: ec8a9f156fbfb38438429d6e365b1ea0
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: 15. Computer desktop
-    second: {fileID: 324680464661339936, guid: 70328120d6df0c840b61dbae929b3447, type: 3}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: 16. Rangka kursi
-    second: {fileID: 9045895998808348557, guid: 8fd8dc8ceb636444aaf7e5f94fb6f96e, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

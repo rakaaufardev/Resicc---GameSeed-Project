@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 using UnityEngine.UI;
+using System;
 
 public class GameController : MonoBehaviour
 {
@@ -10,6 +10,10 @@ public class GameController : MonoBehaviour
     [SerializeField] private float energy = 100f;
     [SerializeField] private int clueItemsCollected = 0;
     [SerializeField] private int startingPoint = 20;
+
+    // UI Sliders for mood and energy
+    [SerializeField] private Slider moodSlider;
+    [SerializeField] private Slider energySlider;
 
     // Time
     public static Action OnMinuteChanged;
@@ -34,6 +38,15 @@ public class GameController : MonoBehaviour
         Minute = 0;
         Hour = initialHour;
         timer = minuteToRealTime;
+
+        // Initialize sliders
+        moodSlider.minValue = 0; // Make sure the slider has a min value of 0
+        moodSlider.maxValue = 100; // And max value of 100
+        moodSlider.value = mood;   // Set its value initially
+
+        energySlider.minValue = 0; // Same for the energy slider
+        energySlider.maxValue = 100;
+        energySlider.value = energy;
     }
 
     void Update()
@@ -46,14 +59,12 @@ public class GameController : MonoBehaviour
             {
                 Minute++;
                 OnMinuteChanged?.Invoke();
-                Debug.Log("Sekarang menit " + Minute);
 
                 if (Minute >= 60)
                 {
                     Hour++;
                     Minute = 0;
                     OnHourChanged?.Invoke();
-                    Debug.Log("Sekarang jam " + Hour);
 
                     // Invoke time-specific events
                     if (Hour == 6 || Hour == 7)
@@ -91,6 +102,10 @@ public class GameController : MonoBehaviour
 
         mood = Mathf.Clamp(mood, 0f, 100f);
         energy = Mathf.Clamp(energy, 0f, 100f);
+
+        // Update UI sliders
+        moodSlider.value = mood;
+        energySlider.value = energy;
     }
 
     public void KeepItem(float keepMoodValue, float keepEnergyValue, bool isClueItem)
@@ -100,6 +115,10 @@ public class GameController : MonoBehaviour
 
         mood = Mathf.Clamp(mood, 0f, 100f);
         energy = Mathf.Clamp(energy, 0f, 100f);
+
+        // Update UI sliders
+        moodSlider.value = mood;
+        energySlider.value = energy;
 
         if (isClueItem)
         {

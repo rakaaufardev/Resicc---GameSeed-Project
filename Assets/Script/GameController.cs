@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI; // Add this to work with UI components
 
 public class GameController : MonoBehaviour
 {
@@ -10,23 +11,24 @@ public class GameController : MonoBehaviour
     [SerializeField] private int clueItemsCollected = 0;
     [SerializeField] private int startingPoint = 20;
 
-    //time
-    //Action
+    // Time
     public static Action OnMinuteChanged;
     public static Action OnHourChanged;
 
-    //set time static 
-    public static int Minute {get; private set;}
-    public static int Hour {get; private set;}
+    public static Action OnMorning;
+    public static Action OnNoon;
+    public static Action OnAfterNoon;
+    public static Action OnEvening;
 
-    //0.5 second real time is 1 minute game time
+    public static int Minute { get; private set; }
+    public static int Hour { get; private set; }
+
+    // Time settings
     private float minuteToRealTime = 0.5f;
     private float timer;
-
     private int maxGameDuration = 15; // 15 hours
     private int initialHour = 6; // Game starts at 6 AM
     [SerializeField] private bool isGameEnded = false; // Flag to check if game has ended
-
 
     void Start()
     {
@@ -37,46 +39,41 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-    // Only update the timer if the game hasn't ended
-    if (!isGameEnded)
-    {
-        // Update time
-        timer -= Time.deltaTime;
-
-        if (timer <= 0)
+        if (!isGameEnded)
         {
-            Minute++;
-            OnMinuteChanged?.Invoke();
-            Debug.Log("Sekarang menit " + Minute);
-            
-            if (Minute >= 60)
+            timer -= Time.deltaTime;
+
+            if (timer <= 0)
             {
-                Hour++;
-                Minute = 0;
-                OnHourChanged?.Invoke();
-                Debug.Log("Sekarang jam " + Hour);
+                Minute++;
+                OnMinuteChanged?.Invoke();
+                Debug.Log("Sekarang menit " + Minute);
+
+                if (Minute >= 60)
+                {
+                    Hour++;
+                    Minute = 0;
+                    OnHourChanged?.Invoke();
+                    Debug.Log("Sekarang jam " + Hour);
+                }
+
+                timer = minuteToRealTime;
             }
 
-            // Reset the timer for the next game minute
-            timer = minuteToRealTime;
-        }
-
-        // Check if the game has reached 15 game hours or energy is depleted
-        if (Hour >= initialHour + maxGameDuration || energy <= 0)
-        {
-            EndGame();
+            if (Hour >= initialHour + maxGameDuration || energy <= 0)
+            {
+                EndGame();
+            }
         }
     }
-}
 
     public void ThrowItem(float throwMoodValue, float throwEnergyValue)
     {
         mood += throwMoodValue;
         energy += throwEnergyValue;
-        
+
         mood = Mathf.Clamp(mood, 0f, 100f);
         energy = Mathf.Clamp(energy, 0f, 100f);
-
     }
 
     public void KeepItem(float keepMoodValue, float keepEnergyValue, bool isClueItem)

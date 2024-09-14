@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-using UnityEngine.UI; // Add this to work with UI components
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -14,7 +14,6 @@ public class GameController : MonoBehaviour
     // Time
     public static Action OnMinuteChanged;
     public static Action OnHourChanged;
-
     public static Action OnMorning;
     public static Action OnNoon;
     public static Action OnAfterNoon;
@@ -55,6 +54,24 @@ public class GameController : MonoBehaviour
                     Minute = 0;
                     OnHourChanged?.Invoke();
                     Debug.Log("Sekarang jam " + Hour);
+
+                    // Invoke time-specific events
+                    if (Hour == 6 || Hour == 7)
+                    {
+                        OnMorning?.Invoke();
+                    }
+                    else if (Hour == 12)
+                    {
+                        OnNoon?.Invoke();
+                    }
+                    else if (Hour == 15)
+                    {
+                        OnAfterNoon?.Invoke();
+                    }
+                    else if (Hour == 18 || Hour == 19)
+                    {
+                        OnEvening?.Invoke();
+                    }
                 }
 
                 timer = minuteToRealTime;

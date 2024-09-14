@@ -19,6 +19,11 @@ public class Item : Interactable
     private void Start()
     {
         gameController = FindObjectOfType<GameController>();
+
+        if (gameController == null)
+        {
+            Debug.LogWarning("GameController not found in the scene.");
+        }
     }
 
     public override void OnFocus()

@@ -27,7 +27,7 @@ public class GameController : MonoBehaviour
     public static int Hour { get; private set; }
 
     // Time settings
-    private float minuteToRealTime = 1f;
+    private float minuteToRealTime = 0.25f;
     private float timer;
     private int maxGameDuration = 15; // 15 hours
     private int initialHour = 9; // Game starts at 6 AM

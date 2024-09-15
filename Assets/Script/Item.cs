@@ -93,7 +93,7 @@ public class Item : Interactable
         gameController.KeepItem(keepMoodValue, keepEnergyValue, isClueItem);
         Destroy(gameObject);
         uiItemDescPanel.SetActive(false);
-        uiButtonInteractPanel.SetActive(true);
+        uiButtonInteractPanel.SetActive(false);
         uiButtonKeepThrowPanel.SetActive(false);
     }
 
@@ -105,7 +105,7 @@ public class Item : Interactable
         gameController.ThrowItem(throwMoodValue, throwEnergyValue);
         Destroy(gameObject);
         uiItemDescPanel.SetActive(false);
-        uiButtonInteractPanel.SetActive(true);
+        uiButtonInteractPanel.SetActive(false);
         uiButtonKeepThrowPanel.SetActive(false);
     }
 

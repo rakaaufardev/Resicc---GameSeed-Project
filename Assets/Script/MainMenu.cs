@@ -36,14 +36,13 @@ public class MainMenu : MonoBehaviour
     }
     void OnPlayButton()
     {
-        SceneManager.LoadScene("Level"); 
+        SceneManager.LoadScene("Tutorial"); 
     }
 
 
     void OnCreditsButton()
     {
-        ButtonPanel.SetActive(false);
-        CreditsPanel.SetActive(true);
+        SceneManager.LoadScene("Credits");
     }
 
     // Function when "Exit" button is clicked

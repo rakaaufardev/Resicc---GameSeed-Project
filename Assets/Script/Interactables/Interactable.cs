@@ -9,7 +9,11 @@ public abstract class Interactable : MonoBehaviour
         gameObject.layer = 6;
     }
 
-    public abstract void OnInteract();
+    public abstract void OnInteract(Camera playerCamera); // Update method to accept Camera
     public abstract void OnFocus();
     public abstract void OnLoseFocus();
+
+    public abstract void OnKeep();
+
+    public abstract void OnThrow();
 }

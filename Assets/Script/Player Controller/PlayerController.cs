@@ -89,7 +89,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(interactKey) && Physics.Raycast(playerCamera.ViewportPointToRay(interactionRayPoint), out RaycastHit hit, interactionDistance, interactionLayer))
         {
-            currentInteractable.OnInteract();
+            currentInteractable.OnInteract(playerCamera); // Pass player camera reference here
         }
 
         if (Input.GetKeyDown(keepKey))
@@ -102,6 +102,7 @@ public class PlayerController : MonoBehaviour
             currentInteractable.OnThrow();
         }
     }
+
 
     private void HandleGravity()
     {

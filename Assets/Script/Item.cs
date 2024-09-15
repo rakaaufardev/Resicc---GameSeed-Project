@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
 
 public class Item : Interactable
 {
@@ -21,8 +20,7 @@ public class Item : Interactable
 
     private Vector3 originalPosition;
     private Quaternion originalRotation;
-    private Transform originalParent; // Menyimpan parent original
-    private bool isInteracting = false;
+    private Transform originalParent; // Store original parent
     private GameController gameController;
 
     private void Start()
@@ -36,7 +34,7 @@ public class Item : Interactable
         // Store the item's initial position, rotation, and parent
         originalPosition = transform.position;
         originalRotation = transform.rotation;
-        originalParent = transform.parent; // Simpan parent awal item
+        originalParent = transform.parent; // Store the original parent
     }
 
     public override void OnFocus()
@@ -51,28 +49,26 @@ public class Item : Interactable
 
     public override void OnInteract(Camera playerCamera)
     {
-        if (isInteracting) return; // Mencegah interaksi jika item sudah diinteraksi
-
-        Debug.Log("Item interacted with!");
+        if (isInteracting) return; // Prevent interaction if already interacting
 
         if (playerCamera != null)
         {
-            // Jadikan item child dari player camera agar ikut gerakan kamera
+            // Make item a child of player camera to follow camera movement
             transform.SetParent(playerCamera.transform);
             uiButtonKeepThrowPanel.SetActive(true);
             uiButtonInteractPanel.SetActive(false);
 
-            // Reset posisi dan rotasi item agar tepat di depan kamera
-            transform.localPosition = new Vector3(0, 0, 1.5f); // Posisi di depan kamera (1 unit)
+            // Reset item position and rotation to be in front of the camera
+            transform.localPosition = new Vector3(0, 0, 1f); // Position units in front of the camera
             transform.localRotation = Quaternion.identity;
 
             Rigidbody rb = GetComponent<Rigidbody>();
             if (rb != null)
             {
-                rb.isKinematic = true; // Nonaktifkan physics
+                rb.isKinematic = true; // Disable physics
             }
 
-            isInteracting = true; // Tandai bahwa item sedang diinteraksi
+            isInteracting = true; // Mark as interacting
         }
     }
 
@@ -87,31 +83,33 @@ public class Item : Interactable
 
     public override void OnKeep()
     {
-        if (!isInteracting) return; // Mencegah keep jika tidak sedang interaksi
+        if (!isInteracting) return; // Prevent keeping if not interacting
 
-        Debug.Log("Item kept!");
         gameController.KeepItem(keepMoodValue, keepEnergyValue, isClueItem);
         Destroy(gameObject);
         uiItemDescPanel.SetActive(false);
         uiButtonInteractPanel.SetActive(false);
         uiButtonKeepThrowPanel.SetActive(false);
+
+        isInteracting = false; // Reset interaction state
     }
 
     public override void OnThrow()
     {
-        if (!isInteracting) return; // Mencegah throw jika tidak sedang interaksi
+        if (!isInteracting) return; // Prevent throwing if not interacting
 
-        Debug.Log("Item thrown!");
         gameController.ThrowItem(throwMoodValue, throwEnergyValue);
         Destroy(gameObject);
         uiItemDescPanel.SetActive(false);
         uiButtonInteractPanel.SetActive(false);
         uiButtonKeepThrowPanel.SetActive(false);
+
+        isInteracting = false; // Reset interaction state
     }
 
     private void Update()
     {
-        // Jika item sedang dipegang dan klik kanan ditekan, kembalikan item ke tempat asal
+        // If item is being held and right-click is pressed, return item to original position
         if (isInteracting && Input.GetMouseButtonDown(1))
         {
             ReturnToOriginalPosition();
@@ -119,23 +117,23 @@ public class Item : Interactable
         }
     }
 
-    // Mengembalikan item ke posisi, rotasi, dan parent awal
+    // Return the item to its original position, rotation, and parent
     private void ReturnToOriginalPosition()
     {
-        // Lepaskan item dari player (hapus parent)
+        // Remove item from the player (remove parent)
         transform.SetParent(originalParent);
 
-        // Kembalikan posisi dan rotasi awal
+        // Restore original position and rotation
         transform.position = originalPosition;
         transform.rotation = originalRotation;
 
-        // Aktifkan kembali physics jika ada
+        // Reactivate physics if applicable
         Rigidbody rb = GetComponent<Rigidbody>();
         if (rb != null)
         {
-            rb.isKinematic = false; // Aktifkan physics
+            rb.isKinematic = false; // Reactivate physics
         }
 
-        isInteracting = false; // Tandai bahwa interaksi telah selesai
+        isInteracting = false; // Mark interaction as finished
     }
 }

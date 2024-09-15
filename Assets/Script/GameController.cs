@@ -1,4 +1,5 @@
 using System.Collections;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,7 +10,6 @@ public class GameController : MonoBehaviour
     [SerializeField] private float mood = 100f;
     [SerializeField] private float energy = 100f;
     [SerializeField] private int clueItemsCollected = 0;
-    [SerializeField] private int startingPoint = 20;
 
     // UI Sliders for mood and energy
     [SerializeField] private Slider moodSlider;
@@ -124,27 +124,30 @@ public class GameController : MonoBehaviour
         {
             clueItemsCollected++;
             if (clueItemsCollected > 10) clueItemsCollected = 10;
-            Debug.Log("Clue item collected! Total clues: " + clueItemsCollected);
         }
     }
 
     public void EndGame()
     {
         isGameEnded = true; // Set the flag to stop the timer
-        if (mood > 80f && clueItemsCollected >= 10)
+
+        if (mood > 25f && clueItemsCollected >= 6)
         {
             // Good ending
-            Debug.Log("Good Ending!");
+            SceneManager.LoadScene("GoodEnding");
+            Cursor.lockState = CursorLockMode.None;
         }
-        else if (mood < 20f && clueItemsCollected <= 5)
+        else if (mood < 15f && clueItemsCollected <= 5)
         {
             // Bad ending
-            Debug.Log("Bad Ending!");
+            SceneManager.LoadScene("BadEnding");
+            Cursor.lockState = CursorLockMode.None;
         }
         else
         {
-            // Default Ending
-            Debug.Log("Neutral Ending!");
+            SceneManager.LoadScene("BadEnding");
+            Cursor.lockState = CursorLockMode.None;
         }
     }
+
 }

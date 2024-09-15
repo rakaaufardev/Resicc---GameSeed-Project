@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Intro : MonoBehaviour
+public class Intro3 : MonoBehaviour
 {
     public Button nextButton;
     public AudioSource bgmAudioSource; // Drag the AudioSource into this field
@@ -29,6 +29,6 @@ public class Intro : MonoBehaviour
     }
     void OnNextButton()
     {
-        SceneManager.LoadScene("Intro1");
+        SceneManager.LoadScene("Level");
     }
 }

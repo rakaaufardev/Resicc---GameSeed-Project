@@ -1,25 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Intro : MonoBehaviour
+public class LastChap : MonoBehaviour
 {
-    public Button nextButton;
     public AudioSource bgmAudioSource; // Drag the AudioSource into this field
     public AudioClip bgmClip; // Drag your BGM audio file here
 
     void Start()
     {
-        // Add listeners to each button
-        nextButton.onClick.AddListener(OnNextButton);
-
         // Play background music
         if (bgmAudioSource != null && bgmClip != null)
         {
             bgmAudioSource.clip = bgmClip;
-            bgmAudioSource.loop = true; // Makes the music loop
+            bgmAudioSource.loop = true; 
             bgmAudioSource.Play();
         }
         else
@@ -27,8 +22,12 @@ public class Intro : MonoBehaviour
             Debug.LogWarning("BGM AudioSource or AudioClip is missing!");
         }
     }
-    void OnNextButton()
+
+    void Update()
     {
-        SceneManager.LoadScene("Intro1");
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
     }
 }

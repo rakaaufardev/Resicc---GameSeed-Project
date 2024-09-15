@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
     [Header("Movement Parameters")]
     [SerializeField] private float walkSpeed = 3.0f;
     [SerializeField] private float gravity = 1f;
@@ -19,7 +18,7 @@ public class PlayerController : MonoBehaviour
 
     private Animator animator;
 
-    [Header("Movement Parameters")]
+    [Header("Interaction Parameters")]
     [SerializeField] private Vector3 interactionRayPoint = default;
     [SerializeField] private float interactionDistance = default;
     [SerializeField] private LayerMask interactionLayer = default;
@@ -29,8 +28,6 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 velocity;
     private Vector3 moveDirection;
-
-
 
     private void Awake()
     {
@@ -67,6 +64,11 @@ public class PlayerController : MonoBehaviour
 
     private void HandleInteractionCheck()
     {
+        // Only prevent raycast checks when currently interacting with an item.
+        if (currentInteractable != null && currentInteractable.isInteracting)
+            return;
+
+        // Raycast for interactions if not interacting with an item
         if (Physics.Raycast(playerCamera.ViewportPointToRay(interactionRayPoint), out RaycastHit hit, interactionDistance))
         {
             if (hit.collider.gameObject.layer == 6 && (currentInteractable == null || hit.collider.gameObject.GetInstanceID() != currentInteractable.gameObject.GetInstanceID()))
@@ -85,24 +87,29 @@ public class PlayerController : MonoBehaviour
 
     private void HandleInteractionInput()
     {
-        if (currentInteractable == null) return;
+        if (currentInteractable == null)
+            return;
 
-        if (Input.GetKeyDown(interactKey) && Physics.Raycast(playerCamera.ViewportPointToRay(interactionRayPoint), out RaycastHit hit, interactionDistance, interactionLayer))
+        // Allow interaction, but only for the current interactable object
+        if (Input.GetKeyDown(interactKey) && !currentInteractable.isInteracting && Physics.Raycast(playerCamera.ViewportPointToRay(interactionRayPoint), out RaycastHit hit, interactionDistance, interactionLayer))
         {
-            currentInteractable.OnInteract(playerCamera); // Pass player camera reference here
+            currentInteractable.OnInteract(playerCamera); // Pass player camera reference
         }
 
-        if (Input.GetKeyDown(keepKey))
+        // Handle Keep action
+        if (Input.GetKeyDown(keepKey) && currentInteractable.isInteracting)
         {
             currentInteractable.OnKeep();
+            currentInteractable = null; // Reset interactable
         }
 
-        if (Input.GetKeyDown(throwKey))
+        // Handle Throw action
+        if (Input.GetKeyDown(throwKey) && currentInteractable.isInteracting)
         {
             currentInteractable.OnThrow();
+            currentInteractable = null; // Reset interactable
         }
     }
-
 
     private void HandleGravity()
     {
@@ -111,10 +118,9 @@ public class PlayerController : MonoBehaviour
             velocity.y = -2f;
         }
 
-        velocity.y -= gravity * Time.deltaTime; 
+        velocity.y -= gravity * Time.deltaTime;
         characterController.Move(velocity * Time.deltaTime);
     }
-    
 
     private void HandleAnimator()
     {
@@ -124,4 +130,3 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Speed", speed);
     }
 }
-

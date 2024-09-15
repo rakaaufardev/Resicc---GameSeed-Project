@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    [SerializeField] private float mouseSensitivity;
+    [SerializeField] private float mouseSensitivity = 250;
     [SerializeField] private Transform arms;
     [SerializeField] private Transform body;
 

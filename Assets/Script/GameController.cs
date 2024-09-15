@@ -27,10 +27,10 @@ public class GameController : MonoBehaviour
     public static int Hour { get; private set; }
 
     // Time settings
-    private float minuteToRealTime = 0.5f;
+    private float minuteToRealTime = 1f;
     private float timer;
     private int maxGameDuration = 15; // 15 hours
-    private int initialHour = 6; // Game starts at 6 AM
+    private int initialHour = 9; // Game starts at 6 AM
     [SerializeField] private bool isGameEnded = false; // Flag to check if game has ended
 
     void Start()
@@ -67,7 +67,7 @@ public class GameController : MonoBehaviour
                     OnHourChanged?.Invoke();
 
                     // Invoke time-specific events
-                    if (Hour == 6 || Hour == 7)
+                    if (Hour == 9 || Hour == 10)
                     {
                         OnMorning?.Invoke();
                     }

@@ -324,6 +324,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dus ambalan
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5cb84a337d6eac94888a12c15ff873b1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -396,6 +400,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tanaman juntai
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a96ab2a75e002b8428345f5371a4d31c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -404,6 +412,63 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1572736508}
   m_SourcePrefab: {fileID: 100100000, guid: a96ab2a75e002b8428345f5371a4d31c, type: 3}
+--- !u!1001 &109522059
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 8b1ed97543131a84da272693454689d7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.751
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8b1ed97543131a84da272693454689d7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.105
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8b1ed97543131a84da272693454689d7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.243
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8b1ed97543131a84da272693454689d7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.332154
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8b1ed97543131a84da272693454689d7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -7.809446e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8b1ed97543131a84da272693454689d7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9432252
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8b1ed97543131a84da272693454689d7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 3.7417316e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8b1ed97543131a84da272693454689d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8b1ed97543131a84da272693454689d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -141.201
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8b1ed97543131a84da272693454689d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b1ed97543131a84da272693454689d7, type: 3}
+      propertyPath: m_Name
+      value: Baju 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8b1ed97543131a84da272693454689d7, type: 3}
 --- !u!1001 &112046005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -455,6 +520,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d93a4014db10f484bbc4c733c7a53822, type: 3}
       propertyPath: m_Name
       value: Boneka
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d93a4014db10f484bbc4c733c7a53822, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -603,6 +672,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gantungan handuk (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ce73111f880e0344943a6c019d70e1e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -662,6 +735,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e9b2fd8eeb404b04ebfff1fc48c0ed40, type: 3}
       propertyPath: m_Name
       value: Pembuangan air
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e9b2fd8eeb404b04ebfff1fc48c0ed40, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -784,6 +861,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 44ac0d4ffb39a4d47bb6278d53993a46, type: 3}
       propertyPath: m_Name
       value: Mp3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 44ac0d4ffb39a4d47bb6278d53993a46, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -909,6 +990,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Komputer 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b72f710b2e50ba642b85832c757e1307, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -968,6 +1053,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f5d04782505f5804889b7d535378d203, type: 3}
       propertyPath: m_Name
       value: Buku 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f5d04782505f5804889b7d535378d203, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1239,6 +1328,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: lampu dindingfbx
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 011f181dd4043964cafcda036aa2d22a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1478,6 +1571,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tanaman dinding
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 337b80df807b47745b537e61cfc8cf3c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1569,6 +1666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buku 5
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0034b57d3be2a2a43a3fa6f01d5545c3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1577,6 +1678,96 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1882538967}
   m_SourcePrefab: {fileID: 100100000, guid: 0034b57d3be2a2a43a3fa6f01d5545c3, type: 3}
+--- !u!1001 &384860192
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7094a9eb6d0a3f24497eea0002757254, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.406
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7094a9eb6d0a3f24497eea0002757254, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.4529311
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7094a9eb6d0a3f24497eea0002757254, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.24715
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7094a9eb6d0a3f24497eea0002757254, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -3.7493994e-33
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7094a9eb6d0a3f24497eea0002757254, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -6.123234e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7094a9eb6d0a3f24497eea0002757254, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7094a9eb6d0a3f24497eea0002757254, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 6.123234e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7094a9eb6d0a3f24497eea0002757254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7094a9eb6d0a3f24497eea0002757254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7094a9eb6d0a3f24497eea0002757254, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7094a9eb6d0a3f24497eea0002757254, type: 3}
+      propertyPath: m_Name
+      value: Baju 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7094a9eb6d0a3f24497eea0002757254, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7094a9eb6d0a3f24497eea0002757254, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 384860194}
+  m_SourcePrefab: {fileID: 100100000, guid: 7094a9eb6d0a3f24497eea0002757254, type: 3}
+--- !u!1 &384860193 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7094a9eb6d0a3f24497eea0002757254, type: 3}
+  m_PrefabInstance: {fileID: 384860192}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &384860194
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384860193}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.13322935, y: 0.79308605, z: 0.624115}
+  m_Center: {x: 0.013345063, y: -0.031832576, z: -0.0042322725}
 --- !u!1 &388907915 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1dfe9fee1685f4d4499a91127b0bf60b, type: 3}
@@ -1716,6 +1907,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Frame foto dinding
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 197a3e402b544444eade5855298cab16, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1807,6 +2002,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gantungan handuk
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ce73111f880e0344943a6c019d70e1e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1867,6 +2066,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lampu tidur
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 66c83eef8e033774781ef4128e1c042b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1926,6 +2129,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4f2c3cd0fd2544e4a9987218a50324cb, type: 3}
       propertyPath: m_Name
       value: Sampah makanan 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4f2c3cd0fd2544e4a9987218a50324cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2174,6 +2381,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pintu kanan lemari baju
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 02f5eda926a687c4ba75f223915b7832, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 02f5eda926a687c4ba75f223915b7832, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2327,6 +2542,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pintu toilet
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f6fb5b51f1b8f6944b6318556d74b368, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2443,6 +2662,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Curtain
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 74b1422777a24a34986b43ba1de20378, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2533,6 +2756,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4a5f6defed9390047bcd94849b6b5424, type: 3}
       propertyPath: m_Name
       value: Gitar
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a5f6defed9390047bcd94849b6b5424, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2705,6 +2932,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2b68b1d5bb1d6b048a203e163c254599, type: 3}
       propertyPath: m_Name
       value: Backsplash
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2b68b1d5bb1d6b048a203e163c254599, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2947,6 +3178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tanaman besar
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9dfa9da1374b2bd46a42eea5be4e4bd6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3006,6 +3241,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4583394132303e347a6aed981735cba8, type: 3}
       propertyPath: m_Name
       value: Ember
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4583394132303e347a6aed981735cba8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3185,6 +3424,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kloset
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7847059c25e7aaf43b7e9f25c553261c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3244,6 +3487,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 25da86613c6f7ac469134825b803a04f, type: 3}
       propertyPath: m_Name
       value: Buku 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25da86613c6f7ac469134825b803a04f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3485,6 +3732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tanaman besar (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9dfa9da1374b2bd46a42eea5be4e4bd6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3575,6 +3826,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1dfe9fee1685f4d4499a91127b0bf60b, type: 3}
       propertyPath: m_Name
       value: Gantungan dinding
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1dfe9fee1685f4d4499a91127b0bf60b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3758,6 +4013,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: lantai dinding
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3528de356b330c945a874e0b9d36dc60, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3815,6 +4074,92 @@ Transform:
   - {fileID: 5303972}
   m_Father: {fileID: 439226645}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &923909889
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 311daed6ab1f7794ca3dfaee1d0c9ce1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.718
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 311daed6ab1f7794ca3dfaee1d0c9ce1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.431
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 311daed6ab1f7794ca3dfaee1d0c9ce1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.513
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 311daed6ab1f7794ca3dfaee1d0c9ce1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7700999
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 311daed6ab1f7794ca3dfaee1d0c9ce1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -8.093262e-18
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 311daed6ab1f7794ca3dfaee1d0c9ce1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.6379233
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 311daed6ab1f7794ca3dfaee1d0c9ce1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -8.621662e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 311daed6ab1f7794ca3dfaee1d0c9ce1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 311daed6ab1f7794ca3dfaee1d0c9ce1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -280.726
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 311daed6ab1f7794ca3dfaee1d0c9ce1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 311daed6ab1f7794ca3dfaee1d0c9ce1, type: 3}
+      propertyPath: m_Name
+      value: Baju 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 311daed6ab1f7794ca3dfaee1d0c9ce1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 923909891}
+  m_SourcePrefab: {fileID: 100100000, guid: 311daed6ab1f7794ca3dfaee1d0c9ce1, type: 3}
+--- !u!1 &923909890 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 311daed6ab1f7794ca3dfaee1d0c9ce1, type: 3}
+  m_PrefabInstance: {fileID: 923909889}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &923909891
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923909890}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.15167825, y: 0.7738881, z: 0.7589507}
+  m_Center: {x: 0.018227486, y: -0.023586601, z: 0.010186567}
 --- !u!1 &929588093
 GameObject:
   m_ObjectHideFlags: 0
@@ -3923,6 +4268,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buku 2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2b8b7767f424d854da768e7d044de0c4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3982,6 +4331,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ad1bc6d5d07d0e14c939f4ce436e2fc9, type: 3}
       propertyPath: m_Name
       value: Keset
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad1bc6d5d07d0e14c939f4ce436e2fc9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4129,6 +4482,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 83f57f7ef940bdc4b8298086c779f603, type: 3}
       propertyPath: m_Name
       value: Sampah kertas
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 83f57f7ef940bdc4b8298086c779f603, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4448,7 +4805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1c41dbd598beb3c48b8457dc14bb7792, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4626,6 +4983,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kitchen set (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7820948c6476b0e43b49129bec86beaf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4717,6 +5078,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kursifbx
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 89d34ad9ec49ce94bbaa7d4e71749441, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4768,7 +5133,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 9331d4d111b5d3444a144fb16977ad3c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.544001
+      value: 12.715333
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9331d4d111b5d3444a144fb16977ad3c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4776,23 +5141,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9331d4d111b5d3444a144fb16977ad3c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.468
+      value: -7.4104056
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9331d4d111b5d3444a144fb16977ad3c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -3.7493994e-33
+      value: 0.2298119
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9331d4d111b5d3444a144fb16977ad3c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -6.123234e-17
+      value: 7.3665383e-17
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9331d4d111b5d3444a144fb16977ad3c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: -0.9732351
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9331d4d111b5d3444a144fb16977ad3c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 6.123234e-17
+      value: -4.5521556e-17
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9331d4d111b5d3444a144fb16977ad3c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4800,7 +5165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9331d4d111b5d3444a144fb16977ad3c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -513.428
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9331d4d111b5d3444a144fb16977ad3c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -4809,6 +5174,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9331d4d111b5d3444a144fb16977ad3c, type: 3}
       propertyPath: m_Name
       value: Gantungan baju (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9331d4d111b5d3444a144fb16977ad3c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4869,6 +5238,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b9104ff2b8b27f240a6f28301c266fe5, type: 3}
       propertyPath: m_Name
       value: Komputer
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b9104ff2b8b27f240a6f28301c266fe5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4985,6 +5358,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7ef9745e01604eb41a39df6361e2673a, type: 3}
       propertyPath: m_Name
       value: Surat
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7ef9745e01604eb41a39df6361e2673a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5193,9 +5570,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7531195336061392892, guid: aa3ec14b45561b040bcd026d643e55e6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2483261919935424997, guid: aa3ec14b45561b040bcd026d643e55e6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: aa3ec14b45561b040bcd026d643e55e6, type: 3}
       propertyPath: m_Name
       value: Buku laci
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa3ec14b45561b040bcd026d643e55e6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2432930971428236560, guid: aa3ec14b45561b040bcd026d643e55e6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283358821923152207, guid: aa3ec14b45561b040bcd026d643e55e6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5995655066261635885, guid: aa3ec14b45561b040bcd026d643e55e6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5300,6 +5701,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wastafel
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fc093692445312a488845d2349a869c1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5391,6 +5796,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sampah kertas toilet
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ef9713865fd1a5e4f859b48bf49a6129, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5481,6 +5890,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d3a317f894c28d54cbf8751ed11f25fb, type: 3}
       propertyPath: m_Name
       value: Tanaman gantung
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d3a317f894c28d54cbf8751ed11f25fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5676,6 +6089,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kasur (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d48da45685b0db84e990159a01c8b470, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5735,6 +6152,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3e8f14897e4793c4795295bf230fc84a, type: 3}
       propertyPath: m_Name
       value: Tempat pensil
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3e8f14897e4793c4795295bf230fc84a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5796,6 +6217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Meja belajar (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eb034cb3749d40b468e8c4f729a0ff27, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5855,6 +6280,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8565f02940390884a9ac6d41b144dab5, type: 3}
       propertyPath: m_Name
       value: Sampah kertas kasur
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8565f02940390884a9ac6d41b144dab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6098,6 +6527,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e98f5a27dec1b6744b63674c7eede8d0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6160,6 +6593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ambalan
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 897a00cab866e4d4fbc9419ff3b012c0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6219,6 +6656,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 26a8006b9ef88aa43b286be2d7670f97, type: 3}
       propertyPath: m_Name
       value: Sampah kertas meja
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 26a8006b9ef88aa43b286be2d7670f97, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6311,6 +6752,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rug
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9f7dc831e56fb7f4f9b8b1f691ca9e96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6402,6 +6847,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: lemari baju
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5ecff05490642ce4a9d7ebcee0c073f4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6462,6 +6911,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buku 3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1cdcdda819ff5834c8dc1226d7e622d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6521,6 +6974,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a4c78afe9c9f0cb43b82acaa6a76a17e, type: 3}
       propertyPath: m_Name
       value: Botol minum
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a4c78afe9c9f0cb43b82acaa6a76a17e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6759,6 +7216,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box atas
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3069d527ea759304bb8f6d27bbf2f4db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6850,6 +7311,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Terminal
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 518475449adb87745815dff5c6cab954, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6913,6 +7378,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 25c818bc739449349bb931beb0c236d0, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25c818bc739449349bb931beb0c236d0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7037,6 +7506,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fe61b9a1cce2a7b46b19c8702e47af86, type: 3}
       propertyPath: m_Name
       value: Lemari dinding
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe61b9a1cce2a7b46b19c8702e47af86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7278,6 +7751,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sampah makanan 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a590a0f7a4ec4794098e0fc9ba596579, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7400,6 +7877,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sticky notes (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 12f11f50d725b2b41a3156248520d56a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7459,6 +7940,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5ad76a51656de5545a43dfb719c69ac6, type: 3}
       propertyPath: m_Name
       value: Pintu kiri lemari baju
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5ad76a51656de5545a43dfb719c69ac6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5ad76a51656de5545a43dfb719c69ac6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7607,6 +8096,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shower
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 43ef3b65c7bb18248bb85a85e70732ff, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7666,6 +8159,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ebbaf7613ea822e4a994859f3b300f25, type: 3}
       propertyPath: m_Name
       value: Nakas
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ebbaf7613ea822e4a994859f3b300f25, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7845,6 +8342,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sampah kertas laci
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b39d54b307d3f4940aa2bc5766500f55, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7936,6 +8437,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tempat sampah
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aaa232c55b3d69c43af370edf0322061, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7975,6 +8480,92 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.19678865, y: 0.22498178, z: 0.6104859}
   m_Center: {x: 0.007524237, y: -0.09066594, z: -0.017600104}
+--- !u!1001 &1851360938
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 495df3faa75814446937b691918b2831, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.526
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 495df3faa75814446937b691918b2831, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.249
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 495df3faa75814446937b691918b2831, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.874
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 495df3faa75814446937b691918b2831, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.36021698
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 495df3faa75814446937b691918b2831, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -7.9178655e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 495df3faa75814446937b691918b2831, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.93286854
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 495df3faa75814446937b691918b2831, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 3.5064798e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 495df3faa75814446937b691918b2831, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 495df3faa75814446937b691918b2831, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -137.773
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 495df3faa75814446937b691918b2831, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 495df3faa75814446937b691918b2831, type: 3}
+      propertyPath: m_Name
+      value: Baju 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 495df3faa75814446937b691918b2831, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1851360940}
+  m_SourcePrefab: {fileID: 100100000, guid: 495df3faa75814446937b691918b2831, type: 3}
+--- !u!1 &1851360939 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 495df3faa75814446937b691918b2831, type: 3}
+  m_PrefabInstance: {fileID: 1851360938}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1851360940
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851360939}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.13272414, y: 0.76545644, z: 0.5425612}
+  m_Center: {x: 0.014794637, y: -0.075732335, z: 0.01469919}
 --- !u!1001 &1852461085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8026,6 +8617,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1dfeb002f54d3274f82ddc04983a3cbc, type: 3}
       propertyPath: m_Name
       value: Barang ibu 2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1dfeb002f54d3274f82ddc04983a3cbc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8086,6 +8681,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c1f7a8c1bf7540e4d895f95d7ed7d6a6, type: 3}
       propertyPath: m_Name
       value: Buku Diary
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c1f7a8c1bf7540e4d895f95d7ed7d6a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8405,9 +9004,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2764512629625626004, guid: 497fbb5c9f901d64995e5d2c02bebb9c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -1558721567721526513, guid: 497fbb5c9f901d64995e5d2c02bebb9c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 497fbb5c9f901d64995e5d2c02bebb9c, type: 3}
       propertyPath: m_Name
       value: keyboard
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 497fbb5c9f901d64995e5d2c02bebb9c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8703,6 +9314,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sampah makanan 3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 28ff4eab3443329469d3f2b3e931a8f9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8824,6 +9439,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9122b34b1c0ac3744bd4dce0334c0160, type: 3}
       propertyPath: m_Name
       value: Gantungan baju
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9122b34b1c0ac3744bd4dce0334c0160, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9210,6 +9829,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sticky notes
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 12f11f50d725b2b41a3156248520d56a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9325,6 +9948,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a7a111da04071384a869fa9842be7ad4, type: 3}
       propertyPath: m_Name
       value: Trashbag
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a7a111da04071384a869fa9842be7ad4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9442,6 +10069,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 53b693eab18e46d409a83b96960aa8d1, type: 3}
       propertyPath: m_Name
       value: Cermin
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 53b693eab18e46d409a83b96960aa8d1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9608,3 +10239,7 @@ SceneRoots:
   - {fileID: 674343177}
   - {fileID: 1326218634}
   - {fileID: 281559975}
+  - {fileID: 384860192}
+  - {fileID: 923909889}
+  - {fileID: 1851360938}
+  - {fileID: 109522059}

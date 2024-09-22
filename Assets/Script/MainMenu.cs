@@ -1,11 +1,12 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // Required to load scenes
+using UnityEngine.SceneManagement;
+using UnityEngine.Serialization; // Required to load scenes
 using UnityEngine.UI; // Required for Button components
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] private GameObject ButtonPanel;
-    [SerializeField] private GameObject CreditsPanel;
+    [FormerlySerializedAs("ButtonPanel")] [SerializeField] private GameObject buttonPanel;
+    [FormerlySerializedAs("CreditsPanel")] [SerializeField] private GameObject creditsPanel;
     // Assign the buttons in the Inspector
     public Button playButton;
     public Button creditsButton;

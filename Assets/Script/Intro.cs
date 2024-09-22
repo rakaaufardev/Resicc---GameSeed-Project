@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Intro : MonoBehaviour
 {
@@ -27,6 +25,7 @@ public class Intro : MonoBehaviour
             Debug.LogWarning("BGM AudioSource or AudioClip is missing!");
         }
     }
+
     void OnNextButton()
     {
         SceneManager.LoadScene("Intro1");

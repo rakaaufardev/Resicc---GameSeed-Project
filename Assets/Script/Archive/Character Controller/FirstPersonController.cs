@@ -37,7 +37,7 @@ public class FirstPersonController : MonoBehaviour
     [SerializeField] private float walkBobAmount = 0.05f;
     [SerializeField] private float sprintBobSpeed = 18f;
     [SerializeField] private float sprintBobAmount = 0.11f;
-    private float defaultYpos = 0f;
+    private float defaultYpos;
     private float timer;
 
 
@@ -48,7 +48,7 @@ public class FirstPersonController : MonoBehaviour
     private Vector3 moveDirection;
     private Vector2 currentInput;
 
-    private float rotationX = 0;
+    private float rotationX;
 
     void Awake()
     {

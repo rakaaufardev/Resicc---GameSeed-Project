@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
 public class Item : Interactable
 {
@@ -16,7 +14,7 @@ public class Item : Interactable
     [SerializeField] private float throwMoodValue = 5f;
     [SerializeField] private float throwEnergyValue = 5f;
 
-    [SerializeField] private bool isClueItem = false;
+    [SerializeField] private bool isClueItem;
 
     private Vector3 originalPosition;
     private Quaternion originalRotation;
@@ -39,7 +37,7 @@ public class Item : Interactable
 
     public override void OnFocus()
     {
-        if (!isInteracting && infoTextUI != null)
+        if (!IsInteracting && infoTextUI != null)
         {
             infoTextUI.text = itemName;
             uiItemDescPanel.SetActive(true);
@@ -49,7 +47,7 @@ public class Item : Interactable
 
     public override void OnInteract(Camera playerCamera)
     {
-        if (isInteracting) return; // Prevent interaction if already interacting
+        if (IsInteracting) return; // Prevent interaction if already interacting
 
         if (playerCamera != null)
         {
@@ -68,13 +66,13 @@ public class Item : Interactable
                 rb.isKinematic = true; // Disable physics
             }
 
-            isInteracting = true; // Mark as interacting
+            IsInteracting = true; // Mark as interacting
         }
     }
 
     public override void OnLoseFocus()
     {
-        if (!isInteracting && infoTextUI != null)
+        if (!IsInteracting && infoTextUI != null)
         {
             uiItemDescPanel.SetActive(false);
             uiButtonInteractPanel.SetActive(false);
@@ -83,7 +81,7 @@ public class Item : Interactable
 
     public override void OnKeep()
     {
-        if (!isInteracting) return; // Prevent keeping if not interacting
+        if (!IsInteracting) return; // Prevent keeping if not interacting
 
         gameController.KeepItem(keepMoodValue, keepEnergyValue, isClueItem);
         Destroy(gameObject);
@@ -91,12 +89,12 @@ public class Item : Interactable
         uiButtonInteractPanel.SetActive(false);
         uiButtonKeepThrowPanel.SetActive(false);
 
-        isInteracting = false; // Reset interaction state
+        IsInteracting = false; // Reset interaction state
     }
 
     public override void OnThrow()
     {
-        if (!isInteracting) return; // Prevent throwing if not interacting
+        if (!IsInteracting) return; // Prevent throwing if not interacting
 
         gameController.ThrowItem(throwMoodValue, throwEnergyValue);
         Destroy(gameObject);
@@ -104,13 +102,13 @@ public class Item : Interactable
         uiButtonInteractPanel.SetActive(false);
         uiButtonKeepThrowPanel.SetActive(false);
 
-        isInteracting = false; // Reset interaction state
+        IsInteracting = false; // Reset interaction state
     }
 
     private void Update()
     {
         // If item is being held and right-click is pressed, return item to original position
-        if (isInteracting && Input.GetMouseButtonDown(1))
+        if (IsInteracting && Input.GetMouseButtonDown(1))
         {
             ReturnToOriginalPosition();
             uiButtonKeepThrowPanel.SetActive(false);
@@ -134,6 +132,6 @@ public class Item : Interactable
             rb.isKinematic = false; // Reactivate physics
         }
 
-        isInteracting = false; // Mark interaction as finished
+        IsInteracting = false; // Mark interaction as finished
     }
 }

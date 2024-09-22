@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class Interactable : MonoBehaviour
 {
-    public bool isInteracting { get; protected set; } = false;
+    public bool IsInteracting { get; protected set; } = false;
 
     public virtual void Awake()
     {

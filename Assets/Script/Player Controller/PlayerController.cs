@@ -14,14 +14,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private KeyCode throwKey = KeyCode.G;
 
     private CharacterController characterController;
-    private bool isCharacterGrounded = false;
+    private readonly bool isCharacterGrounded = false;
 
     private Animator animator;
 
     [Header("Interaction Parameters")]
-    [SerializeField] private Vector3 interactionRayPoint = default;
-    [SerializeField] private float interactionDistance = default;
-    [SerializeField] private LayerMask interactionLayer = default;
+    [SerializeField] private Vector3 interactionRayPoint;
+    [SerializeField] private float interactionDistance;
+    [SerializeField] private LayerMask interactionLayer;
     private Interactable currentInteractable;
 
     private Camera playerCamera;
@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
     private void HandleInteractionCheck()
     {
         // Only prevent raycast checks when currently interacting with an item.
-        if (currentInteractable != null && currentInteractable.isInteracting)
+        if (currentInteractable != null && currentInteractable.IsInteracting)
             return;
 
         // Raycast for interactions if not interacting with an item
@@ -91,20 +91,20 @@ public class PlayerController : MonoBehaviour
             return;
 
         // Allow interaction, but only for the current interactable object
-        if (Input.GetKeyDown(interactKey) && !currentInteractable.isInteracting && Physics.Raycast(playerCamera.ViewportPointToRay(interactionRayPoint), out RaycastHit hit, interactionDistance, interactionLayer))
+        if (Input.GetKeyDown(interactKey) && !currentInteractable.IsInteracting && Physics.Raycast(playerCamera.ViewportPointToRay(interactionRayPoint), out RaycastHit hit, interactionDistance, interactionLayer))
         {
             currentInteractable.OnInteract(playerCamera); // Pass player camera reference
         }
 
         // Handle Keep action
-        if (Input.GetKeyDown(keepKey) && currentInteractable.isInteracting)
+        if (Input.GetKeyDown(keepKey) && currentInteractable.IsInteracting)
         {
             currentInteractable.OnKeep();
             currentInteractable = null; // Reset interactable
         }
 
         // Handle Throw action
-        if (Input.GetKeyDown(throwKey) && currentInteractable.isInteracting)
+        if (Input.GetKeyDown(throwKey) && currentInteractable.IsInteracting)
         {
             currentInteractable.OnThrow();
             currentInteractable = null; // Reset interactable
